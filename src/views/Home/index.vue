@@ -4,18 +4,19 @@
     <!-- <confirm/> -->
     <button @click='confirm'>confirm</button>
     <button @click='anyconfirm'>anyconfirm</button>
-
+    <upload/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import confirm from "../../components/confirm/confirm.vue"
+import upload from "../../components/upload/idnex"
 
 export default {
   name: 'Home',
   components: {
     // confirm
+    upload
   },
   data(){
     return {
@@ -38,7 +39,6 @@ export default {
       }
     },
     anyconfirm(){
-      console.log(111);
       this.$anyconfirm()
     }
   },
